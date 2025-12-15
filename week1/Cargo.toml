@@ -1,7 +1,3 @@
-[package]
-name = "week1"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-cargo-expand = "1.0.118"
+[workspace]
+resolver = "3"
+members = ["app","serialize_macro","serialize_macro_traits"]
