@@ -28,3 +28,37 @@
 Tokenstream(raw tokens) --> syn::parse --> Structured Abstracted Syntax tree(AST) -->[your logic] --> quote! --> Tokenstream(generated code).
 
 -   the `syn` crate parses the rust code from a string into a data structure that we can perform some operations on. the `quote` crate turns syn data structure back into rust code. these crates make it much simpler to parse any rust code that we want work on.
+
+```markdown
+Source code (.rs)
+↓
+Lexing (characters → tokens)
+↓
+Parsing (tokens → AST)
+↓
+MACRO EXPANSION ← ⭐ macros live here
+↓
+Name resolution & visibility checks
+↓
+Type checking
+↓
+Borrow checking
+↓
+MIR generation
+↓
+LLVM IR
+↓
+Machine code
+```
+
+-   `quote` exist because humans do not want construct token manually.
+    ```
+    rust looking code -> Tokenstreams
+    ```
+-   This is not string interpolation. it is token interpolation.
+-   tokens are loseless representation of rust syntax.
+-   `syn` exist because humans do not want to manually parse tokens.
+    ```
+      Tokenstream -> Structured AST (syn types)
+    ```
+-   this AST is not compiler level , its library level AST.
