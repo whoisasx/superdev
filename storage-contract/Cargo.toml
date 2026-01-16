@@ -1,0 +1,13 @@
+[package]
+name = "storage-contract"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type=["cdylib","lib"]
+
+[dependencies]
+borsh = "1.6.0"
+borsh-derive = "1.6.0"
+solana-program = "2.1.0"
+blake3 = "=1.5.4"
