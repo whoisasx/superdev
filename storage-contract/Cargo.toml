@@ -10,4 +10,9 @@ crate-type=["cdylib","lib"]
 borsh = "1.6.0"
 borsh-derive = "1.6.0"
 solana-program = "2.1.0"
-blake3 = "=1.5.4"
+blake3 = "1.5.5"
+solana-sdk-ids = "3.1.0"
+
+[dev-dependencies]
+litesvm = "0.9.1"
+solana-sdk = "3.0.0"
