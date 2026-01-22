@@ -1,0 +1,94 @@
+# Rustfmt configuration file
+# See https://rust-lang.github.io/rustfmt for all options
+
+# Edition
+edition = "2021"
+
+# Maximum width of each line
+max_width = 100
+
+# Maximum width of the args of a function call before falling back to vertical formatting
+fn_call_width = 60
+
+# Maximum width of the args of a function-like attributes before falling back to vertical formatting
+attr_fn_like_width = 70
+
+# Maximum width in the body of a struct lit before falling back to vertical formatting
+struct_lit_width = 18
+
+# Maximum width in the body of a struct variant before falling back to vertical formatting
+struct_variant_width = 35
+
+# Maximum width of an array literal before falling back to vertical formatting
+array_width = 60
+
+# Maximum width of a chain to fit on a single line
+chain_width = 60
+
+# Maximum width of the single line if-else before falling back to vertical formatting
+single_line_if_else_max_width = 50
+
+# Brace style for items
+brace_style = "SameLineWhere"
+
+# Brace style for control flow constructs
+control_brace_style = "AlwaysSameLine"
+
+# How to indent
+hard_tabs = false
+tab_spaces = 2
+
+# Where to put the opening brace of functions
+fn_brace_style = "SameLineWhere"
+
+# Where to put the opening brace of items
+item_brace_style = "SameLineWhere"
+
+# Indentation of impl items
+impl_empty_single_line = true
+
+# Put empty-body functions on a single line
+empty_item_single_line = true
+
+# Format string literals where necessary
+format_strings = true
+
+# Use field init shorthand if possible
+use_field_init_shorthand = true
+
+# Merge derives into a single one
+merge_derives = true
+
+# Reorder imports
+reorder_imports = true
+
+# Reorder modules
+reorder_modules = true
+
+# Normalize comments
+normalize_comments = false
+
+# Remove nested parens
+remove_nested_parens = true
+
+# Format code in doc comments
+format_code_in_doc_comments = false
+
+# Wrap comments at max_width
+wrap_comments = false
+
+# Report all errors
+error_on_line_overflow = false
+error_on_unformatted = false
+
+# Newline style
+newline_style = "Auto"
+
+# Format generated files
+format_generated_files = true
+
+# Imports granularity
+imports_granularity = "Crate"
+
+# Group imports by module
+group_imports = "StdExternalCrate"
